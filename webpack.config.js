@@ -4,6 +4,8 @@ const htmlPlugin = new HtmlWebPackPlugin({
     template: "./src/index.html",
     filename: "./index.html"
 });
+
+// TODO: Use terser or uglify?
 module.exports = {
     entry: "./src/app.js",
     output: {
