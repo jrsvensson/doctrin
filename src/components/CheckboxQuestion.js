@@ -5,7 +5,6 @@ import ChoiceLabel from "./ChoiceLabel";
 
 const CheckboxQuestion = ({ question, buttonLabel, handleSubmit }) => {
   const defaultValue = question.choices.map(c => ({ [c]: "No" }));
-  console.log(defaultValue)
   const [value, setValue] = useState(defaultValue);
   const handleChange = e => {
     const idx = value.findIndex(elem => elem.hasOwnProperty(e.target.name));
