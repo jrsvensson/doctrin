@@ -50,7 +50,7 @@ const useQuestionnaire = () => {
     }
 
     answers.push({ [question.question]: answer });
-    updateVisit({isFinished, answers });
+    updateVisit({ isFinished, answers });
     setAnswers(answers);
   };
 

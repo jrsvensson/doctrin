@@ -60,9 +60,9 @@ const mockResponse = [
           {
             question: "Where did you travel?",
             type: "text"
-          },
+          }
         ]
-      },
+      }
     ]
   }
 ];

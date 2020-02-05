@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import ChoicesWrapper from "./ChoicesWrapper";
 import ChoiceLabel from "./ChoiceLabel";

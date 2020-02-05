@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const TextInput = styled.input.attrs(
-    {type: "text"}
-)`
+const TextInput = styled.input.attrs({ type: "text" })`
   color: #000;
   border: 2px solid #3fb6df;
   padding: 16px;

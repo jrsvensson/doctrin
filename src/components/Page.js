@@ -1,7 +1,7 @@
 import useVisit from "../useVisit";
 import Thank from "./Thank";
-import {SsnInput} from "./SsnInput";
-import {IllnessSelector} from "./IllnessSelector";
+import { SsnInput } from "./SsnInput";
+import { IllnessSelector } from "./IllnessSelector";
 import Questionnaire from "./Questionnaire";
 import React from "react";
 import styled from "styled-components";
@@ -23,24 +23,24 @@ const ContentWrapper = styled.main`
 `;
 
 const Page = () => {
-    const {visit = {}} = useVisit();
-    let Content = Thank;
-    if (!visit.id) {
-        Content = SsnInput;
-    } else if (!visit.illness) {
-        Content = IllnessSelector;
-    } else if (!visit.isFinished) {
-        Content = Questionnaire;
-    }
+  const { visit = {} } = useVisit();
+  let Content = Thank;
+  if (!visit.id) {
+    Content = SsnInput;
+  } else if (!visit.illness) {
+    Content = IllnessSelector;
+  } else if (!visit.isFinished) {
+    Content = Questionnaire;
+  }
 
-    return (
-        <>
-            <Header>Doctrin</Header>
-            <ContentWrapper>
-                <Content/>
-            </ContentWrapper>
-        </>
-    );
+  return (
+    <>
+      <Header>Doctrin</Header>
+      <ContentWrapper>
+        <Content />
+      </ContentWrapper>
+    </>
+  );
 };
 
 export default Page;

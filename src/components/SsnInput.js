@@ -15,9 +15,7 @@ export const SsnInput = () => {
         createVisit(ref.current.value);
       }}
     >
-      <Question>
-        Please enter your social security number
-      </Question>
+      <Question>Please enter your social security number</Question>
       <TextInput type={"text"} name={"ssn"} ref={ref} />
       <div>
         <Button>Next</Button>

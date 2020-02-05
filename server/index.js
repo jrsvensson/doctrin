@@ -1,8 +1,8 @@
 import express from "express";
 import path from "path";
 
-import {getIllnesses} from "./illness";
-import {createVisit, getVisit, updateVisit} from "./visit";
+import { getIllnesses } from "./illness";
+import { createVisit, getVisit, updateVisit } from "./visit";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,7 +11,6 @@ const HTML_FILE = path.join(DIST_DIR, "index.html");
 
 app.use(express.static(DIST_DIR));
 app.use(express.json());
-
 
 app.get("/api/illnesses", (req, res) => {
   const illnesses = getIllnesses();

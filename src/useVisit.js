@@ -17,7 +17,7 @@ const useVisit = () => {
     makePost({ ssn }).then(setVisit);
   }, []);
 
-  return { visit, createVisit, updateVisit, illnesses};
+  return { visit, createVisit, updateVisit, illnesses };
 };
 
 export default useVisit;
